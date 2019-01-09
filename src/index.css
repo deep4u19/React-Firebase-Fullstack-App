@@ -1,3 +1,6 @@
+html{
+  min-height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +9,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(/img/mario-bg.png) no-repeat;
+  background-size:100%;
+  background-position: bottom;
+  background-color: #95e8f3;
+  min-height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+form{
+  margin-top: 60px;
+  padding: 20px;
+}
+form button,form h5{
+  margin: 20px 0;
+}
+
+input[type=text]:not(.browser-default):focus:not([read-only]),
+input[type=email]:not(.browser-default):focus:not([read-only]),
+input[type=password]:not(.browser-default):focus:not([read-only]),
+textarea.materialize-textarea:focus:not([read-only]){
+  border-color:rgb(50, 177, 50);
+  box-shadow: none;
 }
